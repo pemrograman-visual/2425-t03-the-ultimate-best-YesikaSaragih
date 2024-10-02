@@ -19,7 +19,7 @@ public class T03 {
             } else {
                 judul = input.nextLine();
                 penulis = input.nextLine();
-                tahunTerbit = input.nextInt();
+                tahunTerbit = Integer.parseInt(input.nextLine());
                 penerbit = input.nextLine();
                 if (penerbit.equals("---")) {
                     penerbit = "---";
@@ -27,8 +27,8 @@ public class T03 {
                     penerbit = penerbit;
                 }
                 formatBukuElektronik = input.nextLine();
-                hargaPembelian = input.nextDouble();
-                minimumMargin = input.nextDouble();
+                hargaPembelian = Double.parseDouble(input.nextLine());
+                minimumMargin = Double.parseDouble(input.nextLine());
                 if (minimumMargin > 0) {
                     kategoriDiskon = "---";
                 } else {
@@ -42,8 +42,8 @@ public class T03 {
                         }
                     }
                 }
-                stok = input.nextInt();
-                rating = input.nextDouble();
+                stok = Integer.parseInt(input.nextLine());
+                rating = Double.parseDouble(input.nextLine());
                 if (rating >= 4.7) {
                     kategori = "Best Pick";
                 } else {
