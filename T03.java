@@ -34,8 +34,8 @@ public class T03 {
                     penerbit = penerbit;
                 }
                 formatbuku = input.nextLine();
-                hargapembelian = input.nextDouble();
-                minimummargin = input.nextDouble();
+                hargapembelian = Double.parseDouble(input.nextLine());
+                minimummargin = Double.parseDouble(input.nextLine());
                 if (minimummargin > 0) {
                     kategoridiskon = "---";
                 } else {
@@ -49,8 +49,8 @@ public class T03 {
                         }
                     }
                 }
-                stok = input.nextInt();
-                rating = input.nextDouble();
+                stok = Integer.parseInt(input.nextLine());
+                rating = Double.parseDouble(input.nextLine());
                 if (rating >= 4.7) {
                     kategori = "Best Pick";
                 } else {
