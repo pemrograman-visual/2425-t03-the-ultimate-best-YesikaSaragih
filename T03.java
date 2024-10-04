@@ -1,5 +1,5 @@
 // 12S24024 - Yesika Nadia Saragih
-// 12S24027 - Grasia Gayatri Simanullang
+// 12S24027 - Grasia Gayatri Simanullang 
 import java.util.*;
 import java.lang.Math;
 
@@ -19,7 +19,7 @@ public class T03 {
             } else {
                 judul = input.nextLine();
                 penulis = input.nextLine();
-                tahunTerbit = Integer.parseInt(input.nextLine());
+                tahunTerbit = input.nextInt();
                 penerbit = input.nextLine();
                 if (penerbit.equals("---")) {
                     penerbit = "---";
@@ -27,8 +27,8 @@ public class T03 {
                     penerbit = penerbit;
                 }
                 formatBukuElektronik = input.nextLine();
-                hargaPembelian = Double.parseDouble(input.nextLine());
-                minimumMargin = Double.parseDouble(input.nextLine());
+                hargaPembelian = input.nextDouble();
+                minimumMargin = input.nextDouble();
                 if (minimumMargin > 0) {
                     kategoriDiskon = "---";
                 } else {
@@ -42,8 +42,8 @@ public class T03 {
                         }
                     }
                 }
-                stok = Integer.parseInt(input.nextLine());
-                rating = Double.parseDouble(input.nextLine());
+                stok = input.nextInt();
+                rating = input.nextDouble();
                 if (rating >= 4.7) {
                     kategori = "Best Pick";
                 } else {
